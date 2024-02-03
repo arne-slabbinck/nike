@@ -16,6 +16,11 @@ const PopularProducts = () => {
           Discover a world of comfort, design, and value
         </p>
       </div>
+
+      <div>
+        
+      </div>
+
     </section>
   )
 }
