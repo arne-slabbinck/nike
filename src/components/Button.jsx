@@ -1,5 +1,5 @@
 
-const Button = ({ label, iconURL, backgroundColor, textColor, borderColor}) => {
+const Button = ({ label, iconURL, backgroundColor, textColor, borderColor, fullWidth }) => {
   return (
     // justify-center to center the items horizontally
     // items-center to center the items vertically
@@ -8,7 +8,9 @@ const Button = ({ label, iconURL, backgroundColor, textColor, borderColor}) => {
                         ${backgroundColor
                         ? `${backgroundColor} ${textColor} ${borderColor}`  
                         : "bg-coral-red text-white border-coral-red"}
-                        rounded-full`}>
+                        rounded-full
+                        ${fullWidth && 'w-full'}"}
+                      `}>
 
         {label}
 
